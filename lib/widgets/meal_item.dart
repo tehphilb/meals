@@ -63,18 +63,18 @@ class MealItem extends StatelessWidget {
       onTap: () => selectMeal(context),
       child: Card(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(0),
         ),
-        elevation: 4,
-        margin: EdgeInsets.all(10.0),
+        elevation: 0,
+        margin: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
         child: Column(
           children: <Widget>[
             Stack(
               children: <Widget>[
                 ClipRRect(
                   borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(15.0),
-                    topRight: Radius.circular(15.0),
+                    topLeft: Radius.circular(0),
+                    topRight: Radius.circular(0),
                   ),
                   child: Image.network(
                     imageUrl,
@@ -83,22 +83,22 @@ class MealItem extends StatelessWidget {
                     fit: BoxFit.cover,
                   ),
                 ),
-                Positioned(
-                  bottom: 20.0,
-                  right: 10.0,
-                  child: Container(
-                    width: 300.0,
-                    color: Colors.black45,
-                    padding:
-                        EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
-                    child: Text(
-                      title,
-                      style: TextStyle(fontSize: 24, color: Colors.white),
-                      softWrap: true,
-                      overflow: TextOverflow.fade,
-                    ),
-                  ),
-                )
+//                Positioned(
+//                  bottom: 20.0,
+//                  right: 10.0,
+//                  child: Container(
+//                    width: 300.0,
+//                    color: Colors.black45,
+//                    padding:
+//                        EdgeInsets.symmetric(vertical: 5.0, horizontal: 20.0),
+//                    child: Text(
+//                      title,
+//                      style: TextStyle(fontSize: 24, color: Colors.white),
+//                      softWrap: true,
+//                      overflow: TextOverflow.fade,
+//                    ),
+//                  ),
+//                )
               ],
             ),
             Padding(

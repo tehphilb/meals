@@ -24,9 +24,9 @@ class CategoryItem extends StatelessWidget {
     return InkWell(
       onTap: () => selectCategory(context),
       splashColor: Theme.of(context).primaryColor,
-      borderRadius: BorderRadius.circular(15),
+      borderRadius: BorderRadius.circular(5),
       child: Container(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.all(7),
         child: Text(
           title,
           style: Theme.of(context).textTheme.headline6,
@@ -34,13 +34,13 @@ class CategoryItem extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              color.withOpacity(0.7),
+              color.withOpacity(0.9),
               color,
             ],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           ),
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(0),
         ),
       ),
     );

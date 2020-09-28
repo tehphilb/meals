@@ -19,8 +19,11 @@ class CategoryMealsScreen extends StatelessWidget {
       return meal.categories.contains(categoryId);
     }).toList();
     return Scaffold(
-      appBar: AppBar(
-        title: Text(categoryTitle),
+      appBar: PreferredSize(
+          preferredSize: Size.fromHeight(50.0),
+          child: AppBar(
+            title: Text(categoryTitle),
+          )
       ),
       body: ListView.builder(
         itemBuilder: (ctx, index) {
